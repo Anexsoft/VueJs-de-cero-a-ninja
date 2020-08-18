@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KODOTI Api V1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <style>
+        .margin-top {
+            margin-top: 0.5rem;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">KODOTI Api V1</h1>
+            <p class="subtitle">Documentación de la API</p>
+
+            <hr>
+
+            <h3 class="title">Cinema</h3>
+            <div class="box"><span class="has-text-weight-bold">[GET]</span> /cinemas</div>
+            <div class="box"><span class="has-text-weight-bold">[GET]</span> /cinemas/:id</div>
+            <div class="box">
+                    <div><span class="has-text-weight-bold">[POST]</span> /cinemas</div>
+<pre class="margin-top">
+{
+    name: 'cinema-name',
+    price: 'cinema-price'
+}</pre>
+            </div>
+            <div class="box">
+                    <div><span class="has-text-weight-bold">[PUT]</span> /cinemas/:id</div>
+<pre class="margin-top">
+{
+    name: 'cinema-name',
+    price: 'cinema-price'
+}</pre>
+            </div>
+
+            <h3 class="title">Movies</h3>
+            <div class="box"><span class="has-text-weight-bold">[GET]</span> /movies</div>
+            <div class="box"><span class="has-text-weight-bold">[GET]</span> /movies/:id</div>
+
+            <h3 class="title">Schedules</h3>
+            <div class="box">
+                <div><span class="has-text-weight-bold">[POST]</span> /schedules</div>
+<pre class="margin-top">
+{
+    movieId: value,
+    cinemaId: value,
+    time: 'value'
+}</pre>
+            </div>
+
+            <h3 class="title">Orders</h3>
+            <div class="box"><span class="has-text-weight-bold">[GET]</span> /orders</div>
+            <div class="box">
+                <div>
+                    <span class="has-text-weight-bold">[POST]</span> /orders
+                </div>
+<pre class="margin-top">
+{
+    userId: value,
+    scheduleId: alue,
+    quantity: value
+}</pre>
+            </div>
+
+            <h3 class="title">Auth</h3>
+            <h4 class="subtitle">Autenticación de nuestro proyecto</h4>
+            <div class="box">
+                <div><span class="has-text-weight-bold">[POST]</span> /auth/login</div>
+<pre class="margin-top">
+{
+    email: 'user-email',
+    password: 'user-password'
+}</pre>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

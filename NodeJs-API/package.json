@@ -1,0 +1,17 @@
+{
+  "name": "kodoti-api",
+  "version": "1.0.0",
+  "description": "Amazing API created by Eduardo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.8.6"
+  }
+}
